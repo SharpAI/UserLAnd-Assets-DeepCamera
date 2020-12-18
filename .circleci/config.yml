@@ -112,14 +112,14 @@ workflows:
       #    filters:
       #      tags:
       #        only: /.*/
-      - publish-github-release:
-          requires:
-            - build_arm
-            - build_arm64
-            - build_x86
-            - build_x86_64
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v\d+\.\d+\.\d+$/
+      #- publish-github-release:
+      #    requires:
+      #      - build_arm
+      #      - build_arm64
+      #      - build_x86
+      #      - build_x86_64
+      #    filters:
+      #      branches:
+      #        ignore: /.*/
+      #      tags:
+      #        only: /^v\d+\.\d+\.\d+$/
